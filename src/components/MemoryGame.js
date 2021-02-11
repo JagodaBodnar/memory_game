@@ -14,20 +14,16 @@ const MemoryGame = () => {
   const [secondCard, setSecondCard] = useState([]);
   const [pickedCards, setPickedCards] = useState([]);
   const [allCards] = useState([]);
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
   const [moves, setMoves] = useState(0);
   const [showImg, setShowImg] = useState(false);
   const [matched, setMatched] = useState(0);
-
-  useEffect(() => {
-    setClick(false);
-  }, []);
 
   const checkIfOneArrayIncludesOther = (arr, target) =>
     target.every((item) => arr.includes(item));
 
   const start = () => {
-    setClick(true);
+    setClick(false);
     setMoves(0);
     allCards.forEach((card) => {
       card.style.visibility = "visible";
@@ -38,6 +34,7 @@ const MemoryGame = () => {
     const sortTheDeck = deck.sort(() => Math.random() - 0.5);
     setDeck(sortTheDeck);
     setTimeout(() => {
+      setClick(true);
       setShowImg(false);
     }, 5000);
   };
@@ -57,7 +54,6 @@ const MemoryGame = () => {
         secondCard.push(e.target.name);
         pickedCards.push(e.target);
         allCards.push(...pickedCards);
-
         deck.map((card) => {
           if (card.name === e.target.name) {
             e.target.style.backgroundImage = `url(${card.image})`;
@@ -95,7 +91,6 @@ const MemoryGame = () => {
           setSecondCard([]);
           const increaseMoves = moves + 1;
           setMoves(increaseMoves);
-          console.log(matched);
         }
       }
     }
