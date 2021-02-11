@@ -49,10 +49,10 @@ export const StyledGameContainer = styled.ul`
   }
   @media ${device.tablet} {
     top: 10%;
-    left: 10%;
+    left: 20%;
   }
   @media ${device.laptop} {
-    left: 20%;
+    left: 25%;
   }
   @media ${device.desktop} {
     left: 30%;
@@ -79,7 +79,7 @@ export const StyledCard = styled.button`
     width: 100px;
     height: 100px;
   }
-  @media ${device.laptop} {
+  @media ${device.desktop} {
     width: 150px;
     height: 150px;
   }
@@ -116,7 +116,7 @@ export const StyledStartButton = styled.button`
     bottom: 15%;
   }
   @media ${device.laptop} {
-    left: 20%;
+    left: 25%;
     bottom: 15%;
   }
   @media ${device.desktop} {

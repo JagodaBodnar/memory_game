@@ -19,7 +19,7 @@ export const StyledWebsiteContainer = styled.div`
     0% 100%;
   background-repeat: no-repeat;
   background-size: 40%, 22%, 24%, 34%, 32%, 23%, 43%, 43%;
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 0;
   @media ${device.mobile} {
     background-size: 10%, 12%, 14%, 14%, 12%, 13%, 13%, 13%;
