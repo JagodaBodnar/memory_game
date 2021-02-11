@@ -39,7 +39,7 @@ const MemoryGame = () => {
     setDeck(sortTheDeck);
     setTimeout(() => {
       setShowImg(false);
-    }, 1000);
+    }, 5000);
   };
 
   const checkIfMatch = (e) => {
