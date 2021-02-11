@@ -16,7 +16,7 @@ Memory game match description:
 - player starts game by pressing start button (that activates possibility to click on cards)
 - player has 5 seconds to memorise card after that time cards are beeing flipped face down
 - player can uncover two cards at the time (flipping third card is blocked)
-- script compares picked cards --> in case of match = hides cards otherwise flipps cards face down
+- script compares picked cards --> in case of match card are beeing hidden otherwise cards are beeing flipped back face down
 - match ends when all cards has been matched, goal is to finish game with the lowest amount of moves (moves are beeing disclosed in the top right corner)
 
 ## Available Scripts

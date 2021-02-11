@@ -101,7 +101,7 @@ export const StyledStartButton = styled.button`
   position: absolute;
   z-index: 99;
   left: 10%;
-  bottom: 40%;
+  bottom: 20%;
   &:hover {
     color: #fe587e;
   }
