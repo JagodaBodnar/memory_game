@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { cards } from "./cards";
 import {
   StyledCard,
@@ -54,6 +54,7 @@ const MemoryGame = () => {
         secondCard.push(e.target.name);
         pickedCards.push(e.target);
         allCards.push(...pickedCards);
+
         deck.map((card) => {
           if (card.name === e.target.name) {
             e.target.style.backgroundImage = `url(${card.image})`;

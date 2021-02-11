@@ -79,7 +79,7 @@ export const StyledCard = styled.button`
     width: 100px;
     height: 100px;
   }
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     width: 150px;
     height: 150px;
   }
