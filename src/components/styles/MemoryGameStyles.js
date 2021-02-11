@@ -21,6 +21,8 @@ export const StyledMovesNumber = styled.div`
   font-family: "Sigmar One", cursive;
   @media ${device.mobile} {
     left: 50%;
+    width: 200px;
+    height: 200px;
   }
   @media ${device.tablet} {
     left: 80%;

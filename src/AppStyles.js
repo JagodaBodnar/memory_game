@@ -16,7 +16,7 @@ export const StyledWebsiteContainer = styled.div`
   background-image: url(${cloud}), url(${cloud}), url(${cloud2}), url(${cloud2}),
     url(${cloud}), url(${baloonorange}), url(${baloongreen}), url(${baloonpink});
   background-position: 85% 0%, 95% 0%, 10% 15%, 80% 100%, 0% 0%, 90% 80%, 20% 0%,
-    0% 80%;
+    0% 100%;
   background-repeat: no-repeat;
   background-size: 40%, 22%, 24%, 34%, 32%, 23%, 43%, 43%;
   overflow: hidden;
