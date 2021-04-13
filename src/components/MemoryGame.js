@@ -76,6 +76,8 @@ const MemoryGame = () => {
                 }),
               500
             );
+            const increaseMoves = moves + 1;
+          setMoves(increaseMoves);
           } else {
             setTimeout(
               () =>
@@ -90,8 +92,6 @@ const MemoryGame = () => {
           setPickedCards([]);
           setFirstCard([]);
           setSecondCard([]);
-          const increaseMoves = moves + 1;
-          setMoves(increaseMoves);
         }
       }
     }
